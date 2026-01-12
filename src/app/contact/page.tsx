@@ -43,7 +43,7 @@ export default function ContactPage() {
     <div className="mx-auto max-w-4xl px-4 py-12">
       <h1 className="font-serif text-4xl text-emerald-900 mb-2">Contact Us</h1>
       <p className="text-lg text-black/70 mb-8">
-        Have questions? We'd love to hear from you. Fill out the form below or reach us directly.
+        Have questions? We&#39;d love to hear from you. Fill out the form below or reach us directly.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2">
@@ -72,7 +72,7 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="space-y-4">
           {status === "success" && (
             <div className="rounded border border-emerald-200 bg-emerald-50 text-emerald-900 p-4">
-              Thank you! Your message has been sent. We'll get back to you soon.
+              Thank you! Your message has been sent. We&#34;ll get back to you soon.
             </div>
           )}
 

@@ -27,7 +27,7 @@ export default function PoliciesPage() {
             Cancellations and rescheduling requests given with less than 24 hours advanced notice will
             result in a charge equal to 50% of the reserved service amount.
           </li>
-          <li>"NO SHOWS" will result in a charge of 100% of the reserved service amount.</li>
+          <li>&#34;NO SHOWS&#34; will result in a charge of 100% of the reserved service amount.</li>
           <li>
             If you are late to a session your session will be shortened. If you are more than 15 minutes
             late, your session may be cancelled. Please call (if you can) if you are going to be late.
@@ -66,7 +66,7 @@ export default function PoliciesPage() {
         <h2 className="font-serif text-2xl text-emerald-900">Environment / Safety / Intoxicants</h2>
         <p className="mt-2 leading-7">
           Please expect that the purpose of any session is to achieve wellness goals while respecting the
-          boundaries of the client as well as the practitioner. If at any time the practitioner's
+          boundaries of the client as well as the practitioner. If at any time the practitioner&#39;s
           boundaries are not respected the session may be ended early with full payment being collected.
           The client also reserves the right to end a session early. The environment created should feel
           safe and relaxed. Please let your practitioner know if any adjustments can be made to make your
