@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { NextPage } from "next";
 
 type BlogPost = {
   slug: string;
@@ -30,7 +31,7 @@ interface BlogPostPageProps {
   };
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+const BlogPostPage: NextPage<BlogPostPageProps> = ({ params }) => {
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) return notFound();
   return (
@@ -40,7 +41,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="whitespace-pre-wrap leading-7">{post.content}</div>
     </article>
   );
-}
+};
+
+export default BlogPostPage;
 
 
 
