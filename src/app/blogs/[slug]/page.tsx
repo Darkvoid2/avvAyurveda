@@ -26,13 +26,14 @@ export async function generateStaticParams() {
 }
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-const BlogPostPage: NextPage<BlogPostPageProps> = ({ params }) => {
-  const post = posts.find((p) => p.slug === params.slug);
+const BlogPostPage: NextPage<BlogPostPageProps> = async ({ params }) => {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
   if (!post) return notFound();
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 prose">
@@ -44,6 +45,3 @@ const BlogPostPage: NextPage<BlogPostPageProps> = ({ params }) => {
 };
 
 export default BlogPostPage;
-
-
-
