@@ -12,7 +12,7 @@ export default function PanchakarmaPage() {
       <p className="leading-7">
         Panchakarma is the ancient healing system of Ayurvedic rejuvenation therapies performed to facilitate
         the removal of deep-rooted impurities, toxins, and stresses in the mind-body. In Ayurveda, Panchakarma
-        therapy means “five actions”. A deep cleansing and rejuvenation program for enhancing longevity and
+        therapy means &#34;five actions&#34;. A deep cleansing and rejuvenation program for enhancing longevity and
         vitality, Panchakarma is considered a complete, holistic approach to the elimination of the root cause
         of each and every chronic health problem.
       </p>

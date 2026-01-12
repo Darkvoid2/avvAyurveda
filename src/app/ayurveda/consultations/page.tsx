@@ -13,7 +13,7 @@ export default function ConsultationsPage() {
         Ayurvedic consultations start with the whole picture of your health. During your appointment you
         will interact with your practitioner about where you have been in your state of health, where you
         are now and where you can go. I will help you better understand your unique constitutional makeup
-        and ways to uncover your true state of health. You’ll come away with recommendations on what and how
+        and ways to uncover your true state of health. You&#39;ll come away with recommendations on what and how
         to eat, ayurvedic herbs and treatments, meditation, yoga asana and much more. My consultations are
         designed to show you the light of Ayurveda so you can become your own healer and improve your health.
       </p>

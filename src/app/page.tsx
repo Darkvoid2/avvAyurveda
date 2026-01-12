@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <h2 className="font-serif text-3xl text-emerald-900 mb-4">About</h2>
           <p>
-            Welcome! I'm Anita Muralidharan, an Ayurvedic Physician. My mission is to help you achieve
+            Welcome! I&#34;m Anita Muralidharan, an Ayurvedic Physician. My mission is to help you achieve
             a state of happiness, health, and balance in both body and mind through the timeless wisdom
             of Ayurveda. By embracing the principles of aahara (nourishment through food), vihara (healthy
             lifestyle practices), aushadhya (herbal remedies), pranayama (breath control), and meditation,
