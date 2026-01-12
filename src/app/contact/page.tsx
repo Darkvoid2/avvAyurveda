@@ -33,7 +33,7 @@ export default function ContactPage() {
 
       setStatus("success");
       (e.target as HTMLFormElement).reset();
-    } catch (err) {
+    } catch (_err) { // eslint-disable-line @typescript-eslint/no-unused-vars
       setStatus("error");
       setErrorMessage("Something went wrong. Please try calling or emailing directly.");
     }

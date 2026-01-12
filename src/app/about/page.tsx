@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const metadata = {
   title: "About | AVV Ayurveda",
@@ -45,8 +46,8 @@ export default function AboutPage() {
           than just symptoms, making it a timeless system of healing.
         </p>
         <div className="grid gap-6 sm:grid-cols-2 pt-4">
-          <img src="/images/about1.jpg" alt="Herbal preparation" className="rounded object-cover w-full h-64" />
-          <img src="/images/about2.jpg" alt="Calming setup" className="rounded object-cover w-full h-64" />
+          <Image src="/images/about1.jpg" alt="Herbal preparation" width={500} height={256} className="rounded object-cover w-full h-64" />
+          <Image src="/images/about2.jpg" alt="Calming setup" width={500} height={256} className="rounded object-cover w-full h-64" />
         </div>
       </section>
     </div>
