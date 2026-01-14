@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-6">
-      <h1 className="font-serif text-4xl text-emerald-900">About</h1>
+      <h1 className="font-serif text-4xl text-emerald-900">About Me</h1>
       <p className="leading-7">
         Welcome! I am Anita Muralidharan, an Ayurvedic Physician. My mission is to help you achieve a
         state of happiness, health, and balance in both body and mind through the timeless wisdom of
@@ -45,10 +45,6 @@ export default function AboutPage() {
           sustainable alternative to modern medicine, focusing on treating the root cause of ailments rather
           than just symptoms, making it a timeless system of healing.
         </p>
-        <div className="grid gap-6 sm:grid-cols-2 pt-4">
-          <Image src="/images/about1.jpg" alt="Herbal preparation" width={500} height={256} className="rounded object-cover w-full h-64" />
-          <Image src="/images/about2.jpg" alt="Calming setup" width={500} height={256} className="rounded object-cover w-full h-64" />
-        </div>
       </section>
     </div>
   );

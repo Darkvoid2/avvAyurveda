@@ -5,7 +5,6 @@ export default function Footer() {
         <p className="text-center">© {new Date().getFullYear()} AVV Ayurveda. All rights reserved.</p>
         <div className="flex gap-4">
           <a href="mailto:anita.murali@avvayurveda.com" className="hover:text-emerald-700">Email</a>
-          <a href="tel:+13033242826" className="hover:text-emerald-700">Call</a>
         </div>
       </div>
     </footer>

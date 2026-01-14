@@ -35,7 +35,7 @@ export default function ContactPage() {
       (e.target as HTMLFormElement).reset();
     } catch (_err) { // eslint-disable-line @typescript-eslint/no-unused-vars
       setStatus("error");
-      setErrorMessage("Something went wrong. Please try calling or emailing directly.");
+      setErrorMessage("Something went wrong. Please try emailing directly.");
     }
   }
 
@@ -50,12 +50,6 @@ export default function ContactPage() {
         <div>
           <h2 className="font-serif text-2xl text-emerald-900 mb-4">Get in Touch</h2>
           <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold mb-1">Phone</h3>
-              <a href="tel:+13033242826" className="text-emerald-700 hover:underline">
-                303-324-2826
-              </a>
-            </div>
             <div>
               <h3 className="font-semibold mb-1">Email</h3>
               <a href="mailto:anita.murali@avvayurveda.com" className="text-emerald-700 hover:underline">
@@ -78,7 +72,7 @@ export default function ContactPage() {
 
           {status === "error" && (
             <div className="rounded border border-red-200 bg-red-50 text-red-900 p-4">
-              {errorMessage || "Something went wrong. Please try calling or emailing directly."}
+              {errorMessage || "Something went wrong. Please try emailing directly."}
             </div>
           )}
 

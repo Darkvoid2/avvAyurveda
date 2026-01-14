@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Panchakarma | AVV Ayurveda",
@@ -6,41 +7,96 @@ export const metadata = {
 
 export default function PanchakarmaPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 space-y-6">
-      <h1 className="font-serif text-4xl text-emerald-900">Panchakarma</h1>
+    <div className="mx-auto max-w-6xl px-4 py-12">
+      {/* Hero Section */}
+      <div className="text-center mb-12">
+        <h1 className="font-serif text-5xl sm:text-6xl text-emerald-900 mb-4">Panchakarma</h1>
+        <div className="w-24 h-1 bg-emerald-600 mx-auto mb-6 rounded-full"></div>
+        <p className="text-xl text-emerald-800 max-w-3xl mx-auto leading-relaxed">
+          Ancient healing system of Ayurvedic rejuvenation therapies for deep cleansing and holistic wellness
+        </p>
+      </div>
 
-      <p className="leading-7">
-        Panchakarma is the ancient healing system of Ayurvedic rejuvenation therapies performed to facilitate
-        the removal of deep-rooted impurities, toxins, and stresses in the mind-body. In Ayurveda, Panchakarma
-        therapy means &#34;five actions&#34;. A deep cleansing and rejuvenation program for enhancing longevity and
-        vitality, Panchakarma is considered a complete, holistic approach to the elimination of the root cause
-        of each and every chronic health problem.
-      </p>
+      {/* Main Content Grid */}
+      <div className="grid gap-12 lg:grid-cols-2 mb-12">
+        {/* Left Column - Content */}
+        <div className="space-y-6">
+          <div>
+            <h2 className="font-serif text-3xl text-emerald-900 mb-4">What is Panchakarma?</h2>
+            <p className="leading-7 text-gray-700">
+              Panchakarma is the ancient healing system of Ayurvedic rejuvenation therapies performed to facilitate
+              the removal of deep-rooted impurities, toxins, and stresses in the mind-body. In Ayurveda, Panchakarma
+              therapy means &#34;five actions&#34;. A deep cleansing and rejuvenation program for enhancing longevity and
+              vitality, Panchakarma is considered a complete, holistic approach to the elimination of the root cause
+              of each and every chronic health problem.
+            </p>
+          </div>
 
-      <p className="leading-7">
-        I specialize in home Panchakarma treatments. You may request references for Panchakarma therapist to
-        do your individual therapy like Abhyanga (oil body massage), Shirodhara (oil stream over the forehead)
-      </p>
+          <div>
+            <h2 className="font-serif text-3xl text-emerald-900 mb-4">Our Approach</h2>
+            <p className="leading-7 text-gray-700 mb-4">
+              I specialize in home Panchakarma treatments. You may request references for Panchakarma therapist to
+              do your individual therapy like Abhyanga (oil body massage), Shirodhara (oil stream over the forehead).
+            </p>
+            <p className="leading-7 text-gray-700">
+              The first-time patients must schedule initial appointments to receive proper panchakarma planning sessions.
+            </p>
+          </div>
+        </div>
 
-      <p className="leading-7">
-        The first-time patients must schedule initial appointments to receive proper panchakarma planning sessions.
-      </p>
+        {/* Right Column - Image */}
+        <div className="flex items-start justify-center lg:justify-end">
+          <div className="w-full max-w-lg">
+            <Image 
+              src="/images/panchakarma.jpg" 
+              alt="Calming Panchakarma setup" 
+              width={500} 
+              height={600} 
+              className="rounded-lg object-cover w-full h-full shadow-lg" 
+            />
+          </div>
+        </div>
+      </div>
 
-      <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Benefits of Panchakarma</h2>
-        <ul className="mt-3 list-disc pl-6 space-y-2">
-          <li>Balances the doshas and brings them to equilibrium.</li>
-          <li>Removes toxins (ama) and rejuvenates the body.</li>
-          <li>Brings glow to the body and promotes longevity.</li>
-        </ul>
+      {/* Benefits Section */}
+      <section className="mb-12">
+        <h2 className="font-serif text-3xl text-emerald-900 mb-8 text-center">Benefits of Panchakarma</h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="bg-emerald-50 p-6 rounded-lg border border-emerald-100 hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
+              <span className="text-2xl">⚖️</span>
+            </div>
+            <h3 className="font-semibold text-lg text-emerald-900 mb-2">Balances Doshas</h3>
+            <p className="text-gray-700">Brings the doshas to equilibrium, restoring natural balance to your body and mind.</p>
+          </div>
+          
+          <div className="bg-emerald-50 p-6 rounded-lg border border-emerald-100 hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
+              <span className="text-2xl">✨</span>
+            </div>
+            <h3 className="font-semibold text-lg text-emerald-900 mb-2">Removes Toxins</h3>
+            <p className="text-gray-700">Eliminates toxins (ama) and rejuvenates the body for optimal health and vitality.</p>
+          </div>
+          
+          <div className="bg-emerald-50 p-6 rounded-lg border border-emerald-100 hover:shadow-md transition-shadow">
+            <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
+              <span className="text-2xl">🌟</span>
+            </div>
+            <h3 className="font-semibold text-lg text-emerald-900 mb-2">Promotes Longevity</h3>
+            <p className="text-gray-700">Brings glow to the body and promotes longevity through holistic rejuvenation.</p>
+          </div>
+        </div>
       </section>
 
-      <div className="mt-8 p-6 bg-emerald-50 border border-emerald-200 rounded-lg">
-        <h2 className="font-serif text-2xl text-emerald-900 mb-4">Book Your Panchakarma Treatment</h2>
-        <p className="mb-4">Ready to experience deep cleansing and rejuvenation? Schedule your appointment today.</p>
+      {/* Call to Action */}
+      <div className="bg-gradient-to-br from-emerald-600 to-emerald-700 text-white p-8 rounded-lg shadow-lg text-center">
+        <h2 className="font-serif text-3xl mb-4">Book Your Panchakarma Treatment</h2>
+        <p className="text-lg mb-6 text-emerald-50 max-w-2xl mx-auto">
+          Ready to experience deep cleansing and rejuvenation? Schedule your appointment today and begin your journey to holistic wellness.
+        </p>
         <Link
           href="/contact"
-          className="inline-block rounded-md bg-emerald-700 text-white px-6 py-3 hover:bg-emerald-800 transition-colors"
+          className="inline-block rounded-md bg-white text-emerald-700 px-8 py-3 font-semibold hover:bg-emerald-50 transition-colors shadow-md"
         >
           Contact Us to Book
         </Link>
