@@ -39,14 +39,13 @@ export default function NavBar() {
                 key={item.href}
                 href={item.href}
                 className={`
-                  relative px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2
+                  relative px-4 py-2 rounded-lg transition-all duration-200
                   ${isActive 
                     ? "bg-emerald-600 text-white shadow-md" 
                     : "text-gray-700 hover:bg-emerald-50 hover:text-emerald-700"
                   }
                 `}
               >
-                <span className={`text-lg ${isActive ? "" : ""}`}>{item.icon}</span>
                 <span className="font-medium">{item.label}</span>
                 {isActive && (
                   <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-white rounded-full"></span>
