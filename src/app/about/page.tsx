@@ -10,7 +10,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-6">
       <h1 className="font-serif text-4xl text-emerald-900">About Me</h1>
       <p className="leading-7">
-        Welcome! I am Anita Muralidharan, an Ayurvedic Physician. My mission is to help you achieve a
+        Welcome! I am Anita Muralidharan,a doctor level NAMA certified Ayurvedic Practitioner. My mission is to help you achieve a
         state of happiness, health, and balance in both body and mind through the timeless wisdom of
         Ayurveda.
       </p>
