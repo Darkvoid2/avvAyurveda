@@ -85,9 +85,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-4 pb-16 grid gap-6 sm:grid-cols-3">
-        <Image src="herbs.jpg" alt="Ayurveda herbs" width={300} height={192} className="rounded object-cover w-full h-48" />
-        <Image src="oils.jpg" alt="Ayurvedic oils" width={300} height={192} className="rounded object-cover w-full h-48" />
+      <div className="mx-auto max-w-6xl px-4 pb-16 grid gap-6 sm:grid-cols-2">
+        <Image src="/images/herbs.jpg" alt="Ayurveda herbs" width={300} height={192} className="rounded object-cover w-full h-48" />
+        <Image src="/images/oils.jpg" alt="Ayurvedic oils" width={300} height={192} className="rounded object-cover w-full h-48" />
       </div>
     </section>
   );

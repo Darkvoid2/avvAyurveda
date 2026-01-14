@@ -46,6 +46,24 @@ export default function AboutPage() {
           than just symptoms, making it a timeless system of healing.
         </p>
       </section>
+
+      <div className="grid gap-6 sm:grid-cols-2 pt-6">
+        <Image
+          src="/images/herbs.jpg"
+          alt="Collection of Ayurvedic herbs"
+          width={600}
+          height={360}
+          className="rounded-lg object-cover w-full h-64"
+          priority
+        />
+        <Image
+          src="/images/oils.jpg"
+          alt="Ayurvedic oils and spa setup"
+          width={600}
+          height={360}
+          className="rounded-lg object-cover w-full h-64"
+        />
+      </div>
     </div>
   );
 }
