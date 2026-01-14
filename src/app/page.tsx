@@ -64,7 +64,7 @@ export default function Home() {
         <div>
           <h2 className="font-serif text-3xl text-emerald-900 mb-4">About</h2>
           <p>
-            Welcome! I&#39;m Anita Muralidharan, an Ayurvedic Physician. My mission is to help you achieve
+            Welcome! I&#39;m Anita Muralidharan, a doctor level NAMA certified Ayurvedic Practitioner.  My mission is to help you achieve
             a state of happiness, health, and balance in both body and mind through the timeless wisdom
             of Ayurveda. By embracing the principles of aahara (nourishment through food), vihara (healthy
             lifestyle practices), aushadhya (herbal remedies), pranayama (breath control), and meditation,
@@ -86,9 +86,8 @@ export default function Home() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 pb-16 grid gap-6 sm:grid-cols-3">
-        <Image src="/images/herbs.jpg" alt="Ayurveda herbs" width={300} height={192} className="rounded object-cover w-full h-48" />
-        <Image src="/images/oils.jpg" alt="Ayurvedic oils" width={300} height={192} className="rounded object-cover w-full h-48" />
-        <Image src="/images/panchakarma.jpg" alt="Panchakarma treatment" width={300} height={192} className="rounded object-cover w-full h-48" />
+        <Image src="herbs.jpg" alt="Ayurveda herbs" width={300} height={192} className="rounded object-cover w-full h-48" />
+        <Image src="oils.jpg" alt="Ayurvedic oils" width={300} height={192} className="rounded object-cover w-full h-48" />
       </div>
     </section>
   );

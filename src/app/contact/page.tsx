@@ -17,6 +17,7 @@ export default function ContactPage() {
       email: formData.get("email"),
       phone: formData.get("phone") || "",
       reason: formData.get("reason"),
+      healthConcerns: formData.get("healthConcerns") || "",
       message: formData.get("message"),
     };
 
@@ -131,6 +132,19 @@ export default function ContactPage() {
               <option value="Follow-up">Follow-up Appointment</option>
               <option value="Other">Other</option>
             </select>
+          </div>
+
+          <div>
+            <label htmlFor="healthConcerns" className="block text-sm font-medium mb-1">
+              What health concerns would you like to address in your appointment?
+            </label>
+            <textarea
+              id="healthConcerns"
+              name="healthConcerns"
+              rows={4}
+              placeholder="Please describe any health concerns or issues you'd like to discuss..."
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-y"
+            />
           </div>
 
           <div>

@@ -39,7 +39,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-sm text-gray-600">
             <span>Made with</span>
             <span className="text-red-500 text-lg">❤️</span>
-            <span>for holistic wellness</span>
+
           </div>
         </div>
       </div>
