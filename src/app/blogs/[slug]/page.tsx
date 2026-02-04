@@ -37,7 +37,7 @@ const BlogPostPage: NextPage<BlogPostPageProps> = async ({ params }) => {
   if (!post) return notFound();
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 prose">
-      <h1 className="font-serif text-4xl text-emerald-900 mb-2">{post.title}</h1>
+      <h1 className="font-serif text-4xl text-teal-800 mb-2">{post.title}</h1>
       <p className="text-sm text-black/70 mb-8">{new Date(post.date).toLocaleDateString()}</p>
       <div className="whitespace-pre-wrap leading-7">{post.content}</div>
     </article>

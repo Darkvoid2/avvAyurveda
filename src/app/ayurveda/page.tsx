@@ -5,7 +5,7 @@ export const metadata = {
 export default function AyurvedaOverviewPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-6">
-      <h1 className="font-serif text-4xl text-emerald-900">What is Ayurveda?</h1>
+      <h1 className="font-serif text-4xl text-teal-800">What is Ayurveda?</h1>
       <p>
         Ayurveda, an ancient system of natural medicine originating from India, holds immense value in
         promoting holistic health and wellness. Rooted in the Sanskrit words &#34;Ayur&#34; (life) and &#34;Veda&#34;

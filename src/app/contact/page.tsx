@@ -42,18 +42,18 @@ export default function ContactPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="font-serif text-4xl text-emerald-900 mb-2">Contact Us</h1>
+      <h1 className="font-serif text-4xl text-teal-800 mb-2">Contact Us</h1>
       <p className="text-lg text-black/70 mb-8">
         Have questions? We&#39;d love to hear from you. Fill out the form below or reach us directly.
       </p>
 
       <div className="grid gap-8 md:grid-cols-2">
         <div>
-          <h2 className="font-serif text-2xl text-emerald-900 mb-4">Get in Touch</h2>
+          <h2 className="font-serif text-2xl text-teal-800 mb-4">Get in Touch</h2>
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold mb-1">Email</h3>
-              <a href="mailto:anita.murali@avvayurveda.com" className="text-emerald-700 hover:underline">
+              <a href="mailto:anita.murali@avvayurveda.com" className="text-teal-700 hover:underline">
                 anita.murali@avvayurveda.com
               </a>
             </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           {status === "success" && (
-            <div className="rounded border border-emerald-200 bg-emerald-50 text-emerald-900 p-4">
+            <div className="rounded border border-teal-200 bg-teal-50 text-teal-800 p-4">
               Thank you! Your message has been sent. We&#34;ll get back to you soon.
             </div>
           )}
@@ -86,7 +86,7 @@ export default function ContactPage() {
               id="name"
               name="name"
               required
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
             />
           </div>
 
@@ -99,7 +99,7 @@ export default function ContactPage() {
               id="email"
               name="email"
               required
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
             />
           </div>
 
@@ -111,7 +111,7 @@ export default function ContactPage() {
               type="tel"
               id="phone"
               name="phone"
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent"
             />
           </div>
 
@@ -123,7 +123,7 @@ export default function ContactPage() {
               id="reason"
               name="reason"
               required
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent bg-white"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent bg-white"
             >
               <option value="">Please select...</option>
               <option value="Consultation">Ayurvedic Consultation</option>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               name="healthConcerns"
               rows={4}
               placeholder="Please describe any health concerns or issues you'd like to discuss..."
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-y"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent resize-y"
             />
           </div>
 
@@ -156,14 +156,14 @@ export default function ContactPage() {
               name="message"
               rows={6}
               required
-              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent resize-y"
+              className="w-full border border-black/20 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent resize-y"
             />
           </div>
 
           <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full rounded-md bg-emerald-700 text-white px-6 py-3 hover:bg-emerald-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full rounded-md bg-teal-700 text-white px-6 py-3 hover:bg-teal-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "sending" ? "Sending..." : "Send Message"}
           </button>

@@ -5,10 +5,10 @@ export const metadata = {
 export default function PoliciesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-8">
-      <h1 className="font-serif text-4xl text-emerald-900">Policies</h1>
+      <h1 className="font-serif text-4xl text-teal-800">Policies</h1>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Confidentiality</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Confidentiality</h2>
         <p className="mt-2 leading-7">
           Strict adherence to confidentiality is maintained for our current as well as past clients and
           patients. Relationships will remain on a strictly therapeutic level in the privacy of the office
@@ -17,7 +17,7 @@ export default function PoliciesPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Cancellation / Illness / Tardiness</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Cancellation / Illness / Tardiness</h2>
         <ul className="mt-2 space-y-2 list-disc pl-6">
           <li>
             Cancellations and rescheduling requests given with more than 24 hours advanced notice result
@@ -41,12 +41,12 @@ export default function PoliciesPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Payment / Reservations</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Payment / Reservations</h2>
         <p className="mt-2 leading-7">We accept checks, cash, Venmo and Zelle.</p>
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Gratuities</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Gratuities</h2>
         <p className="mt-2 leading-7">
           Gratuities are not expected at the end of a service and have been calculated into the offering
           price. Any additional tips given to a practitioner are appreciated, but absolutely not necessary
@@ -55,7 +55,7 @@ export default function PoliciesPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Hygiene</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Hygiene</h2>
         <p className="mt-2 leading-7">
           Please let your practitioner know if you have any allergies to any oils or lotions. Please show
           up clean and free of strong odors and colognes/perfumes.
@@ -63,7 +63,7 @@ export default function PoliciesPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Environment / Safety / Intoxicants</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Environment / Safety / Intoxicants</h2>
         <p className="mt-2 leading-7">
           Please expect that the purpose of any session is to achieve wellness goals while respecting the
           boundaries of the client as well as the practitioner. If at any time the practitioner&#39;s
@@ -76,7 +76,7 @@ export default function PoliciesPage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-emerald-900">Referrals / Scope of Practice</h2>
+        <h2 className="font-serif text-2xl text-teal-800">Referrals / Scope of Practice</h2>
         <p className="mt-2 leading-7">
           In certain cases a practitioner may suggest consulting with another healthcare provider either
           prior, during or post an appointment.

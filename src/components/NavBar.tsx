@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -18,15 +19,22 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-emerald-100 shadow-sm">
+    <header className="sticky top-0 z-50 bg-[#FAF8F3]/95 backdrop-blur-md border-b-2 border-teal-200/50 shadow-sm">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl sm:text-3xl text-emerald-900 hover:text-emerald-700 transition-colors flex items-center gap-2">
-          <span className="text-3xl">🌿</span>
-          <span className="font-bold">AVV Ayurveda</span>
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <Image 
+            src="/images/logo.png" 
+            alt="AVV Ayurveda Logo" 
+            width={60} 
+            height={60} 
+            className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+            priority
+          />
+          <span className="font-serif text-xl sm:text-2xl text-teal-800 font-bold hidden sm:block">AVV Ayurveda</span>
         </Link>
         <button 
           aria-label="Toggle menu" 
-          className="sm:hidden p-2 rounded-md hover:bg-emerald-50 transition-colors text-emerald-900"
+          className="sm:hidden p-2 rounded-md hover:bg-teal-50 transition-colors text-teal-800"
           onClick={() => setOpen((v) => !v)}
         >
           <span className="text-2xl">{open ? "✕" : "☰"}</span>
@@ -41,8 +49,8 @@ export default function NavBar() {
                 className={`
                   relative px-4 py-2 rounded-lg transition-all duration-200
                   ${isActive 
-                    ? "bg-emerald-600 text-white shadow-md" 
-                    : "text-gray-700 hover:bg-emerald-50 hover:text-emerald-700"
+                    ? "bg-teal-700 text-white shadow-md" 
+                    : "text-slate-700 hover:bg-teal-50 hover:text-teal-800"
                   }
                 `}
               >
@@ -56,7 +64,7 @@ export default function NavBar() {
         </nav>
       </div>
       {open && (
-        <nav className="sm:hidden px-4 pb-4 flex flex-col gap-2 bg-emerald-50/50 border-t border-emerald-100">
+        <nav className="sm:hidden px-4 pb-4 flex flex-col gap-2 bg-teal-50/50 border-t border-teal-200/50">
           {navItems.map((item) => {
             const isActive = pathname === item.href || (item.href !== "/" && pathname.startsWith(item.href));
             return (
@@ -67,8 +75,8 @@ export default function NavBar() {
                 className={`
                   py-3 px-4 rounded-lg transition-all border-l-4
                   ${isActive 
-                    ? "bg-emerald-600 text-white border-emerald-800 shadow-md" 
-                    : "border-transparent hover:bg-emerald-100 hover:border-emerald-300 text-gray-700"
+                    ? "bg-teal-700 text-white border-teal-900 shadow-md" 
+                    : "border-transparent hover:bg-teal-100 hover:border-teal-400 text-slate-700"
                   }
                 `}
               >

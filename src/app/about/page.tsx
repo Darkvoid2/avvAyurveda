@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 space-y-6">
-      <h1 className="font-serif text-4xl text-emerald-900">About Me</h1>
+      <h1 className="font-serif text-4xl text-teal-800">About Me</h1>
       <p className="leading-7">
         Welcome! I am Anita Muralidharan,a doctor level NAMA certified Ayurvedic Practitioner. My mission is to help you achieve a
         state of happiness, health, and balance in both body and mind through the timeless wisdom of
@@ -23,7 +23,7 @@ export default function AboutPage() {
       <hr className="my-6 border-black/10" />
 
       <section id="ayurveda" className="space-y-4">
-        <h2 className="font-serif text-3xl text-emerald-900">What is Ayurveda?</h2>
+        <h2 className="font-serif text-3xl text-teal-800">What is Ayurveda?</h2>
         <p>
           Ayurveda, an ancient system of natural medicine originating from India, holds immense value in
           promoting holistic health and wellness. Rooted in the Sanskrit words &#34;Ayur&#34; (life) and &#34;Veda&#34;
