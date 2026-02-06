@@ -23,7 +23,7 @@ export default function NavBar() {
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <Image 
-            src="/images/logo.png" 
+            src="/images/logo.avv.ayurveda.jpg" 
             alt="AVV Ayurveda Logo" 
             width={60} 
             height={60} 

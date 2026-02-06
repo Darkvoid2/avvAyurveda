@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image 
-                src="/images/logo.png" 
+                src="/images/logo.avv.ayurveda.jpg" 
                 alt="AVV Ayurveda Logo" 
                 width={48} 
                 height={48} 

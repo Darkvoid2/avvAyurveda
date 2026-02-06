@@ -19,10 +19,9 @@ export default function Home() {
           {/* Icon badge */}
           <div className="inline-flex items-center justify-center mb-8">
             <div className="relative">
-              <div className="absolute inset-0 bg-teal-200 rounded-full blur-md opacity-50"></div>
-              <div className="relative bg-gradient-to-br from-teal-600 to-teal-800 w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center shadow-lg">
-                <Image src="/images/logo.png" alt="Logo" width={48} height={48} className="w-12 h-12 sm:w-16 sm:h-16 object-contain" />
-              </div>
+              
+          
+              
             </div>
           </div>
           
