@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Formspree integration - sends email to anita.murali@avvayurveda.com
+    // Formspree integration - sends email to avvayurveda@gmail.com
     const formspreeResponse = await fetch("https://formspree.io/f/xbddjrjk", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

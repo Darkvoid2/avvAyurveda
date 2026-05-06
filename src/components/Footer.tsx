@@ -24,7 +24,7 @@ export default function Footer() {
             <h4 className="font-semibold text-teal-800 mb-4 text-lg">Get in Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:anita.murali@avvayurveda.com"
+                href="mailto:avvayurveda@gmail.com"
                 className="flex items-center gap-3 text-slate-700 hover:text-teal-800 transition-colors group"
               >
                 <div className="w-10 h-10 bg-teal-700 rounded-full flex items-center justify-center group-hover:bg-teal-800 transition-colors shadow-md">
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <div className="text-xs text-slate-500">Email</div>
-                  <div className="text-sm font-medium">anita.murali@avvayurveda.com</div>
+                  <div className="text-sm font-medium">avvayurveda@gmail.com</div>
                 </div>
               </a>
             </div>

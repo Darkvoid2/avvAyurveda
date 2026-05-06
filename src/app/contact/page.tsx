@@ -53,8 +53,8 @@ export default function ContactPage() {
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold mb-1">Email</h3>
-              <a href="mailto:anita.murali@avvayurveda.com" className="text-teal-700 hover:underline">
-                anita.murali@avvayurveda.com
+              <a href="mailto:avvayurveda@gmail.com" className="text-teal-700 hover:underline">
+                avvayurveda@gmail.com
               </a>
             </div>
             <div>
